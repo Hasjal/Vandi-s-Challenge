@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #e6f2ff;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height:100vh;
+    margin:0;
+}
+.game-container{
+    background-color: #ffffff; 
+    border-radius: 12px;
+    padding: 30px;
+    width:100%;
+    max-width: 400px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    margin:0 auto;
+    
+
+    
+
+}
+button{
+    background-color: #3b82f6;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border:none;
+    transition: background-color;
+    padding: 32px;
+    outline: none;
+    border-radius: 16px;
+    max-width: 400px;
+}
+.game-container h1{
+color: #1f2937;
+font-size:24px;
+margin-bottom: 10px;
+
+}
+.game-container p{
+    color: #4b5563;
+    font-size: 14px;
+    margin-bottom:25px;
+}
+input[type="number"]{
+    font-size:16ps;
+    width: 100%;
+     font-size: 16px;
+     padding:12px;
+     border-radius: 8px;
+   
+}
+
+ .message-area{
+        background-color: #dbeafe;
+        border-radius:8px;
+        font-size:14px;
+        padding: 16px;
+        color: #1f2937;
+        text-align: center;
+        font-weight: 500;
+    }
+    .attempts-counter{
+        color:#4b5563;
+        font-size:14px;
+        text-align: center;
+        align-items: center;
+        
+    }
+    p{
+        text-align:center;
+    }
