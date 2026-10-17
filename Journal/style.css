@@ -1,0 +1,30 @@
+body{
+    background-color: pink;
+    background-size: cover;
+    background-position: center right;
+    padding: 40px;
+}
+.intro-container{
+    background-color: rgb(221, 66, 221);
+    border-radius: 16px;
+    align-content: center;
+    padding: 80;
+    background-position: center right;
+    align-items: center;
+    
+}
+.intro-container h4{
+    color: rgb(70, 7, 7);
+    align-content: justify;
+    max-width: max-content;
+}
+.write-btn{
+    background-color: rgba(216, 15, 32, 0.692);
+    border-radius: 8px;
+    float: left;
+}
+.write{
+    background-color: rgb(241, 106, 174);
+    border-radius: 16px;
+    
+}
