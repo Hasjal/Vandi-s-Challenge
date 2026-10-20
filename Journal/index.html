@@ -1,38 +1,97 @@
- <!DOCTYPE html>
- <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewpointport" content="width=device-width initial-scale=1.0">
-        <title>Journal</title>
+<!DOCTYPE html>
+<html lang="en">
 
-    </head>
-    <body>
-        <div class="intro-container">
-       <h4><i>Hey there,</i></h4>
-        <h3><b>Take care of<br>your beautiful mind &hearts;</b></h3>
-        <p>This is your safe space to write, reflect,<br>track your mood and grow.You matter,<br>and your feelings are valid.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <button class="write-btn">
-            Write a New Entry
-        </button>
-    </div> 
-        <div class="write">
-            <h5>Write in your journal</h5>
-            <p>What's on your mind today? Share your thoughts, feelings, or anything you're grateful for.</p>
-            <input type="text" placeholder="Type your thoughts here..."><br><br>
-            <input type="date"> 
-            <input type="select" placeholder="type your mood">
-            <h6>Add a photo(optional)</h6>
-            <input type="image" placeholder="Choose image">
-            <button>Save Entry</button>
+<body>
 
-        
-           </div>
-           <style>
-           
-    
-            
-           </style>
-    </body>
- </html>
+    <!-- Introduction Section -->
+    <div class="intro-container">
+
+        <div class="intro-text">
+
+            <h4><i>Hey there,</i></h4>
+
+            <h1>
+                Take care of<br>
+                your beautiful mind ♡
+            </h1>
+
+            <p>
+                This is your safe space to write, reflect,
+                track your mood and grow. You matter,
+                and your feelings are valid.
+            </p>
+
+            <button class="write-btn"
+                onclick="document.getElementById('journal').scrollIntoView({behavior: 'smooth'})">
+                ✎ Write a New Entry
+            </button>
+
+        </div>
+
+        <div class="intro-image">
+            <img src="Jnal.jpeg"
+                 alt="A young woman smiling">
+        </div>
+
+    </div>
+
+
+    <!-- Journal Section -->
+    <div class="write" id="journal">
+
+        <h2>✎ Write in Your Journal</h2>
+
+        <p>
+            What's on your mind today? Share your thoughts,
+            feelings, or anything you're grateful for.
+        </p>
+
+        <form id="journal-form">
+
+            <textarea
+                id="thoughts"
+                placeholder="Type your thoughts here..."
+                required></textarea>
+
+            <div class="form-options">
+
+                <input type="date" id="entry-date" required>
+
+                <select id="mood" required>
+                    <option value="">Select your mood</option>
+                    <option value="Happy">😊 Happy</option>
+                    <option value="Calm">😌 Calm</option>
+                    <option value="Sad">😔 Sad</option>
+                    <option value="Anxious">😟 Anxious</option>
+                    <option value="Grateful">🥰 Grateful</option>
+                </select>
+
+            </div>
+
+            <div class="photo-option">
+
+                <label for="photo">Add a photo (optional)</label>
+
+                <input type="file"
+                       id="photo"
+                       accept="image/*">
+
+            </div>
+
+            <button type="submit" class="save-btn">
+                ➤ Save Entry
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
