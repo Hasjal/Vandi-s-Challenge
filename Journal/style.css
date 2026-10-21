@@ -1,30 +1,207 @@
-body{
-    background-color: pink;
-    background-size: cover;
-    background-position: center right;
-    padding: 40px;
+/* General page styling */
+* {
+    box-sizing: border-box;
 }
-.intro-container{
-    background-color: rgb(221, 66, 221);
-    border-radius: 16px;
-    align-content: center;
-    padding: 80;
-    background-position: center right;
+
+body {
+    margin: 0;
+    padding: 30px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #202638;
+}
+
+/* Introduction section */
+.intro-container {
+    display: flex;
     align-items: center;
-    
+    justify-content: space-between;
+    gap: 30px;
+
+    background-color: #f5dce5;
+    padding: 35px;
+    border-radius: 22px;
+    margin-bottom: 30px;
 }
-.intro-container h4{
-    color: rgb(70, 7, 7);
-    align-content: justify;
-    max-width: max-content;
+
+/* Introduction text */
+.intro-text {
+    flex: 1;
+    min-width: 0;
 }
-.write-btn{
-    background-color: rgba(216, 15, 32, 0.692);
-    border-radius: 8px;
-    float: left;
+
+.intro-text h4 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 24px;
+    color: #74334d;
+    margin: 0 0 15px;
 }
-.write{
-    background-color: rgb(241, 106, 174);
-    border-radius: 16px;
-    
+
+.intro-text h1 {
+    font-size: 36px;
+    line-height: 1.3;
+    margin: 0 0 20px;
+}
+
+.intro-text p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #454554;
+}
+
+/* Introduction button */
+.write-btn {
+    background-color: #a92f64;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding: 16px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.write-btn:hover {
+    background-color: #87244e;
+}
+
+/* Introduction photograph */
+.intro-image {
+    flex: 1;
+    min-width: 0;
+    height: 350px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.intro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Journal form card */
+.write {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.write h2 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.write > p {
+    color: #737784;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Journal writing area */
+#thoughts {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    padding: 20px;
+    margin: 25px 0 18px;
+
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    resize: vertical;
+}
+
+/* Date and mood fields */
+.form-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.form-options input,
+.form-options select {
+    padding: 13px;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 15px;
+}
+
+/* Photo upload */
+.photo-option {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.photo-option label {
+    color: #737784;
+    font-size: 14px;
+}
+
+/* Save button */
+.save-btn {
+    background-color: #a92f8a;
+    color: white;
+    padding: 16px 28px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #87246e;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .intro-container {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .intro-text h1 {
+        font-size: 29px;
+    }
+
+    .intro-image {
+        width: 100%;
+        height: 280px;
+    }
+
+    .write {
+        padding: 20px;
+    }
+
+    .write h2 {
+        font-size: 23px;
+    }
+
+    .form-options {
+        flex-direction: column;
+    }
+
+    .form-options input,
+    .form-options select {
+        width: 100%;
+    }
+
+    .save-btn {
+        width: 100%;
+    }
 }
